@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-g">
+        <meta name="viewport"content="width=device-width,initial-scale-1">
+        <title>assignment-1 DEV </title>
+
+
+    </head>
+    
+</html>
+
+    
+    <style>
+        .centreimage{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+     <style>
+        .float-start{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    <style>
+        .start{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    </style>
+
+
+        
+
+
+    <body background="c:\Users\Sneha\Pictures\New folder (2)\WhatsApp Image 2023-11-18 at 09.40.23_07e6ca25.jpg"
+    style="background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+        <h1 style="text-align: center;font-size: 90px;"><u style="color: black;">CONTOUR PLOT</u></h1>
+        <h1 style="text-align: left;font-size: 60px;color: rgb(204, 124, 20)"><U>DEFINTION:</U></h1>
+        <P style="text-align: left;font-size: 30px;color:palevioletred">A contour plot is a graphical method to visualize the 3-D surface by plotting constant z slices called contour in a 2-D format the contour plot is an alternative to a 3-D surface plot. 
+        THE CONTOUR PLOT IS FORMED BY:
+        Vertical axis: independent variable 2
+        Horizontal axis: independent variable1
+        Lines: iso –response values , can be calculated with the help(x , y)</P>
+        <img src="c:\Users\Sneha\Pictures\New folder (2)\6d8fa68eb5bc0c6657a0213a55c148ac.jpg"class="centreimage" width="490" height="450">
+        <P style="text-align: center;font-size: 50px;color: gray"><U>Types of contour plot</U></P>
+        <P style="text-align: center;font-size: 68px;color: goldenrod">
+            <P style="text-align: center;font-size: 45px;color: goldenrod">Rectangular contour plot</P>
+            <P style="text-align: center;font-size: 45px;color: goldenrod">polar contour plot</P>
+            <P style="text-align: center;font-size: 45px;color: goldenrod">Ternary contour plot</P>
+            <P style="text-align: left;font-size: 35px;color: red">Rectangular contour plot:
+            </P>
+            <P style="text-align: left;font-size: 30px;color: black">A program of 2-D plot in 2-D rectangular canvas it is the most common form of the contour plot
+            </P>
+            <P style="text-align: left;font-size: 35px;color: red">Polar contour plot
+            </P>
+            <P style="text-align: left;font-size: 30px;color: black">Polar contour is plotted by using the plot co-oridinates r & theta. The response variable here is the collection of values generated while passing r & theta into the gives function ,where r is the distance from origin and theta is the angle from the positive x axis
+            </P>
+            <P style="text-align: left;font-size: 35px;color: red">Ternary contour plot
+            </P>
+            <P style="text-align: left;font-size: 30px;color: black">Ternary contour plot is used to represent the relationship between 3 explanatory variables and the response variable in the form of a filled triangle
+            </P>
+            <P style="text-align: right;font-size: 30px;color: violet"><U>Contour plot can be plotted in different programming languages</U></P>
+            <P style="text-align: left;font-size: 30px;color: black">Python/matplotlib: contour plot can be plotted using plt.contour or plt.contour functions, where plt is matplotlib,pyplot. The difference between thesetwo that plot.contour generates hollow contour plot the plt.contour generated filled.
+                Matlab: function such as contour (2d-plot)and contour(3d-contour)can be used for contour plotting.
+                R: can create a contour plot with filled contour functions in R.
+                </P>
+                <P style="text-align: left;font-size: 30px;color: greenyellow">Below is the sample code for plotting rectangular contour plots in python and matplotlib.
+                </P>
+                <P style="text-align: left;font-size: 28px;color: peru">Import numpy as np</P>
+                <P style="text-align: left;font-size: 28px;color: peru">Import matplotlib pyplot as plt</P>
+
+                    <P style="text-align: left;font-size: 28px;color: peru">Def  func (x , y):
+                    </P>
+                    <P style="text-align: left;font-size: 28px;color: peru">return np . Sin (x)**2+np.cos(y)</P>
+                    <P style="text-align: left;font-size: 28px;color: peru">X = np . Linespace (0,5,50)
+                    </P>
+                    <P style="text-align: left;font-size: 28px;color: peru">Y = np . Linespace (0,5,50)
+                    </P>
+                    <P style="text-align: left;font-size: 28px;color: peru">X , y= np . Meshgrid (x , y)
+                    </P>
+                    <P style="text-align: left;font-size: 28px;color: peru">Z=func (x , y)
+
+                    </P>
+                    <P style="text-align: left;font-size: 28px;color: peru">Plt.contour (x , y , z, cmap=‘gist_rainbow_r’);
+                    </P> 
+                    <img src="c:\Users\Sneha\Pictures\New folder (2)\Screenshot_20231104-221121 (2).jpg"class="centreimage" width="490" height="450">
+         
+                <P style="text-align: left;font-size: 28px;color: greenyellow">For plotting polar contour plot we need to define  first r and theta.below is the sample code for plotting polar contour plots using matplotlib subplots</P>
+                <P style="text-align: left;font-size: 28px;color: peru">Rad__arr=np.radians(np.linespace(0,360,20))</P>
+                <P style="text-align: left;font-size: 28px;color: peru"> R_arr=np.array(0,1,1ooo)</P>
+                <P style="text-align: left;font-size: 28px;color: peru">Def func(r,theta):
+                </P>
+                <P style="text-align: left;font-size: 28px;color: peru">Return r*np.sin(theta)</P>
+                <P style="text-align: left;font-size: 28px;color: peru">R,theta=np.meshgrid(r_arr,rad_arr)</P>
+                <P style="text-align: left;font-size: 28px;color: peru">Values=func(r,theta)</P>
+                <P style="text-align: left;font-size: 28px;color: peru">Fig,ax=plt.subplots(subplot_kw=dict(projection=“polar”)</P>
+                <P style="text-align: left;font-size: 28px;color: peru">Ax.contour(theta,r,values,cmap=“spectral_r”)</P>
+                <P style="text-align: left;font-size: 28px;color: peru">Plt.show()</P>
+                <img src="c:\Users\Sneha\Pictures\New folder (2)\Screenshot_20231104-221126 (2).jpg"class="centreimage" width="490" height="450">
+                <P style="text-align: left;font-size: 30px;color: greenyellow">Matplotlib does not provide a definitive api for plotting ternary contour plot however there are many other package which does that n this example we will be using plotly library</P>
+                <P style="text-align: left;font-size: 28px;color: peru">!pip install plotly</P>
+                <P style="text-align: left;font-size: 28px;color: peru">Import plotly.figure_factory as ff
+                    <P style="text-align: left;font-size: 28px;color: peru">A=np.array(0.1,0.2,0.3,1.3/3,1/3,2/3,3,1])</P>
+                    <P style="text-align: left;font-size: 28px;color: peru">B=np.array([0,1/3,2/3,0.3,0.2,0.1])</P>                    
+                    <P style="text-align: left;font-size: 28px;color: peru">C=1-a-b</P>
+                    <P style="text-align: left;font-size: 28px;color: peru">Func=(a-0.02)*b*(a-0.5)*(b-0.4)*(c-1)**2</P>
+                    <P style="text-align: left;font-size: 28px;color: peru">Fig=ff.create_ternary_contour(np.array ([“a”,”b”,”c”]) , func , pole_labels=[“a” , ”b” , ”c”] , interp_mode=‘Cartesian’, colorscale=‘viridis’)</P>
+                    <P style="text-align: left;font-size: 28px;color: peru">Fig.show()</P>
+                    
+                    </P>
+                    <img src="c:\Users\Sneha\Pictures\New folder (2)\Screenshot_20231104-221131 (2).jpg"class="centreimage" width="490" height="450">
+                    
+
+           
+                            
+        
+        
+
+
+
+        
